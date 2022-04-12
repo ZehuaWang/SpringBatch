@@ -21,3 +21,7 @@ Start/Stop/Restart
 Retry/Skip
 
 ![image](https://user-images.githubusercontent.com/40006814/163041955-21317f89-69e4-4266-ae1c-71cdfbf1a510.png)
+
+框架一共有四个主要角色: Job Launcher是任务启动器, 通过它来启动任务, 可以看作是程序的入口. Job代表着一个具体的任务, Step代表一个具体的步骤
+
+一个Job可以包含多个Step. JobRepository是存储数据的地方, 可以看作是一个数据库的接口. 在执行任务时需要通过它来记录任务状态的信息.
